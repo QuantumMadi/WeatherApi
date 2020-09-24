@@ -10,12 +10,10 @@ import android.os.Looper
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.recyclerview.widget.RecyclerView
 import com.example.weatherapi.BuildConfig
 import com.example.weatherapi.R
 import com.example.weatherapi.apiservice.WeatherApi
 import com.example.weatherapi.constants.PERMISSION_ID
-import com.example.weatherapi.mainactivityfragments.WeatherListFragment
 import com.example.weatherapi.models.Forecast
 import com.google.android.gms.location.*
 import kotlinx.android.synthetic.main.activity_main.*

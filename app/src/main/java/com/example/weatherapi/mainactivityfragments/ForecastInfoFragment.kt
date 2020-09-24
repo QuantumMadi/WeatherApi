@@ -8,7 +8,6 @@ import com.example.weatherapi.R
 import com.example.weatherapi.adapters.CardViewAdapter
 import com.example.weatherapi.models.Forecast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_forecast_info.*
 
 class ForecastInfoFragment : Fragment(R.layout.fragment_forecast_info) {

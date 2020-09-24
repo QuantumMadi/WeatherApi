@@ -22,7 +22,6 @@ import io.reactivex.Completable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_weather_list.*
 
 class WeatherListFragment : Fragment(R.layout.fragment_weather_list),
@@ -42,10 +41,6 @@ class WeatherListFragment : Fragment(R.layout.fragment_weather_list),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setCardViewAdapter()
-    }
-
-    override fun onResume() {
-        super.onResume()
     }
 
     override fun showForecastInfo(forecast: Forecast) {
