@@ -13,7 +13,8 @@
 
         <action
             android:id="@+id/action_show_forecast_description_frag"
-            app:destination="@id/forecastInfoFragment"/>
+            app:destination="@id/forecastInfoFragment"
+            app:enterAnim="@android:anim/fade_in" />
 
     </fragment>
     <fragment
@@ -25,7 +26,7 @@
         <action
             android:id="@+id/action_back_to_forecast_list_frag"
             app:destination="@id/weatherRecyclerViewFragment"
-            />
+            app:exitAnim="@android:anim/slide_out_right" />
 
         <argument
             android:name="forecast"
