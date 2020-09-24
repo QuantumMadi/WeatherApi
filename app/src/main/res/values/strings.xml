@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="weather_list_fragment_label">View Weather</string>
+    <string name="forecast_fragment_label">Forecast Info</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="astana">Astana</string>
+    <string name="time">Time:</string>
+    <string name="time_example">2009–06-15T13:45:30</string>
+    <string name="temp">Temp:</string>
+    <string name="example_temp">278K</string>
+    <string name="temp_min">Temp Min:</string>
+    <string name="temp_max">Temp Max:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="example_pressure">200</string>
+    <string name="askForGPSActivation">Please Turn on Your device Location</string>
+    <string name="no_data">No Data</string>
+    <string name="sharedPreferences">SharedPref</string>
+    <string name="savedDataCaution">New data saved</string>
+</resources>

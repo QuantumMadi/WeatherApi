@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_start_margin">12dp</dimen>
+    <dimen name="default_top_margin">14dp</dimen>
+    <dimen name="main_secondary_margin">8dp</dimen>
+    <dimen name="card_distance">4dp</dimen>
+    <dimen name="card_start_end_margin">8dp</dimen>
+</resources>

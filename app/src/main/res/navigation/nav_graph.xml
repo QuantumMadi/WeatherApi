@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/weatherRecyclerViewFragment">
+
+    <fragment
+        android:id="@+id/weatherRecyclerViewFragment"
+        android:name="com.example.weatherapi.mainactivityfragments.WeatherListFragment"
+        android:label="@string/weather_list_fragment_label"
+        tools:layout="@layout/fragment_weather_list">
+
+        <action
+            android:id="@+id/action_show_forecast_description_frag"
+            app:destination="@id/forecastInfoFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/forecastInfoFragment"
+        android:name="com.example.weatherapi.mainactivityfragments.ForecastInfoFragment"
+        android:label="@string/forecast_fragment_label"
+        tools:layout="@layout/fragment_forecast_info">
+
+        <action
+            android:id="@+id/action_back_to_forecast_list_frag"
+            app:destination="@id/weatherRecyclerViewFragment"
+            />
+
+        <argument
+            android:name="forecast"
+            app:argType="com.example.weatherapi.models.Forecast"
+            app:nullable="true" />
+    </fragment>
+</navigation>

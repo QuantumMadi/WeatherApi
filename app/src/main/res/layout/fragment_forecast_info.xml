@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainactivityfragments.ForecastInfoFragment">
+
+    <TextView
+        android:id="@+id/timeLblTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_start_margin"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:text="@string/time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forecastInfoTimeTimeTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:text="@string/time_example"
+        app:layout_constraintStart_toEndOf="@+id/timeLblTxtView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempLblTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_start_margin"
+        android:text="@string/temp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeLblTxtView" />
+
+    <TextView
+        android:id="@+id/forecastInfoTimeTempTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/example_temp"
+        app:layout_constraintStart_toEndOf="@id/tempLblTxtView"
+        app:layout_constraintTop_toBottomOf="@id/forecastInfoTimeTimeTxtView" />
+
+    <TextView
+        android:id="@+id/tempMinLblTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_start_margin"
+        android:layout_marginTop="16dp"
+        android:text="@string/temp_min"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tempLblTxtView" />
+
+    <TextView
+        android:id="@+id/forecastInfoTimeTempMinTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/example_temp"
+        app:layout_constraintStart_toEndOf="@id/tempMinLblTxtView"
+        app:layout_constraintTop_toBottomOf="@id/forecastInfoTimeTempTxtView" />
+
+    <TextView
+        android:id="@+id/tempMaxTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_start_margin"
+        android:text="@string/temp_max"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forecastInfoTimeTempMinTxtView" />
+
+    <TextView
+        android:id="@+id/forecastInfoTimeTempMaxTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/example_temp"
+        app:layout_constraintStart_toEndOf="@id/tempMaxTxtView"
+        app:layout_constraintTop_toBottomOf="@id/forecastInfoTimeTempMinTxtView" />
+
+    <TextView
+        android:id="@+id/pressureLblTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_start_margin"
+        android:text="@string/pressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forecastInfoTimeTempMaxTxtView" />
+
+    <TextView
+        android:id="@+id/forecastInfoTimePressureTxtView"
+        style="@style/defaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/example_pressure"
+        app:layout_constraintStart_toEndOf="@id/pressureLblTxtView"
+        app:layout_constraintTop_toBottomOf="@id/forecastInfoTimeTempMaxTxtView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
